@@ -1,0 +1,23 @@
+{
+  "name": "app-junkies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next -p 9898",
+    "build": "next build",
+    "start": "next start -p 9898"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^4.4.2",
+    "isomorphic-unfetch": "^3.0.0",
+    "markdown-to-jsx": "^6.10.3",
+    "next": "^9.0.5",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "recharts": "^1.7.1"
+  }
+}
