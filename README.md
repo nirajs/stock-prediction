@@ -8,6 +8,6 @@ https://www.analyticsvidhya.com/blog/2018/10/predicting-stock-price-machine-lear
 
 
 Contributers
-- [Niraj] ((github.com/nirajs)
-- [Sameer] (github.com/getsam123)
+- [Niraj](github.com/nirajs)
+- [Sameer](github.com/getsam123)
 - Harmeet
