@@ -153,15 +153,19 @@ function Blog(props) {
 }
 
 Blog.getInitialProps = async function() {
-    const res = await fetch('http://8e632642-fe18-4375-b063-abb888684453.eastus2.azurecontainer.io/score',{method: 'post', body: {}});
-    const data = await res.json();
-    console.log(data);
-    console.log(data[0]);
-    console.log(`Show data fetched. Count: ${data.length}`);
-  
-    return {
-      predictedPrice: data[0]
-    };
+  const res = await fetch('http://8e632642-fe18-4375-b063-abb888684453.eastus2.azurecontainer.io/score',
+  {method: 'post', body: JSON.stringify({'data':[]}), 
+  headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    },
+  });
+  const data = await res.json();
+  console.log(`Show data fetched. Count: ${data.length}`);
+
+  return {
+    predictedPrice: data[0][0]
+  };
 }
 
 export default Blog;
